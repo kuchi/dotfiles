@@ -25,3 +25,4 @@ cask 'iterm2' # Has hot key to get to front
 cask 'spectacle' # Window placement
 cask 'vlc'
 cask 'atom'
+cask 'sourcetree'
