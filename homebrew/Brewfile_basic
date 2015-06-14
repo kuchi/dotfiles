@@ -1,0 +1,27 @@
+# For using this see
+# https://github.com/Homebrew/homebrew-bundle
+# To make a Brewfile of current setup
+# brew bundle dump
+
+tap 'caskroom/cask' # For gui app install
+tap 'homebrew/bundle'
+tap 'homebrew/python'
+tap 'homebrew/science'
+# brew 'readline'
+# brew 'bash'
+brew 'ffmpeg'
+brew 'git-flow-avh'
+brew 'htop-osx' # Better than top, use htop
+brew 'python'
+# brew 'pyqt'
+brew 'tmux'
+brew 'caskroom/cask/brew-cask'
+brew 'homebrew/python/numpy'
+brew 'homebrew/python/scipy'
+# brew 'homebrew/science/pcl'
+# cask 'blender'
+cask 'cheatsheet' # Shows keyboard shortcuts
+cask 'iterm2' # Has hot key to get to front
+cask 'spectacle' # Window placement
+cask 'vlc'
+cask 'atom'
