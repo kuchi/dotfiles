@@ -41,17 +41,17 @@ COMPLETION_WAITING_DOTS="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Start tmux on first new session
+ZSH_TMUX_AUTOSTART=true
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git brew common-aliases history last-working-dir osx per-directory-history
-	pip python sudo tmux terminalapp virtualenvwrapperm web-search wd)
+	pip python sudo tmux terminalapp virtualenvwrapperm wd)
 
 # User configuration
-
-# Start tmux on first new session
-ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
 
