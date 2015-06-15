@@ -13,6 +13,8 @@
 # TODO: Still need to get this fully working, I think this must use
 # source to get it in the current shell! Otherwise its a subshell when run
 # and it's lost.
+# IDEA: Maybe just set the values for the proy in an enviroment file.
+#       Then restart shell or print "source $HOME/.proxy_env"
 
 proxy_file="$HOME/.proxy"
 
