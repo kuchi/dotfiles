@@ -10,7 +10,9 @@
 #   proxy off
 #   proxy: show state
 
-# TODO: Still need to get this fully working
+# TODO: Still need to get this fully working, I think this must use
+# source to get it in the current shell! Otherwise its a subshell when run
+# and it's lost.
 
 proxy_file="$HOME/.proxy"
 
