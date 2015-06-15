@@ -1,0 +1,62 @@
+#!/bin/sh
+#
+# Turn on / off proxy
+#
+# Set proxy in .proxy
+#
+# USAGE:
+#
+#   proxy on: turn on proxy
+#   proxy off
+#   proxy: show state
+
+# TODO: Still need to get this fully working
+
+proxy_file="$HOME/.proxy"
+
+if [ -e "$HOME/.proxy_on" ]
+then
+  use_proxy=true
+else
+  use_proxy=false
+fi
+
+if [ -e $proxy_file ] ; then
+  # Read proxy
+  PROXY=$(<$proxy_file)
+else
+  PROXY=false
+  echo "Please set the proxy in .proxy"
+fi
+
+
+# Make this a funciton
+if $use_proxy ; then
+  echo "Exporting enviroment variables for proxy: $PROXY."
+  export http_proxy="$PROXY"
+  export HTTP_PROXY="$PROXY"
+  export https_proxy="$PROXY"
+  export HTTPS_PROXY="$PROXY"
+else
+  echo "Setting proxy enviroment to none."
+  export http_proxy=""
+  export HTTP_PROXY=""
+  export https_proxy=""
+  export HTTPS_PROXY=""
+fi
+
+
+
+if [ "$1" = "" ] ; then
+  if $use_proxy ; then
+    echo "$PROXY: ON"
+  else
+    echo "Not using proxy ($PROXY)"
+  fi
+elif [ "$1" = "on" ] ; then
+  exec touch "$HOME/.proxy_on"
+elif [ "$1" = "off" ] ; then
+  exec rm "$HOME/.proxy_on"
+else
+  echo "Unknown argument. Use 'on' or 'off.'"
+fi
