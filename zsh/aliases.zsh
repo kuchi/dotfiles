@@ -1,2 +1,2 @@
 alias reload!='. ~/.zshrc'
-alias zshrc="pico ~/.zshrc"
+alias zshrc="atom ~/.dotfiles"
