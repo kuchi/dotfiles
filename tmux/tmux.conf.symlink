@@ -25,3 +25,6 @@ bind r source-file ~/.tmux.conf \; display "Reloaded!"
 # symbols to split the screen
 bind | split-window -h
 bind - split-window -v
+
+# Also need to do brew install reattach-to-user-namespace 
+set-option -g default-command "reattach-to-user-namespace -l zsh"

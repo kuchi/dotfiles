@@ -15,6 +15,7 @@ brew 'htop-osx' # Better than top, use htop
 brew 'python'
 # brew 'pyqt'
 brew 'tmux'
+brew 'reattach-to-user-namespace'  # Need this for tmux.
 brew 'caskroom/cask/brew-cask'
 brew 'homebrew/python/numpy'
 brew 'homebrew/python/scipy'
