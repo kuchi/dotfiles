@@ -1,3 +1,6 @@
+# for some reason I need to have this in the zsh folder. If in the prezto
+# folder I get a problem. Must be order of loading?
+
 #
 # Sets Prezto options.
 #
