@@ -33,24 +33,9 @@ else
   echo "Please set the proxy in .proxy"
 fi
 
-
-# Make this a funciton
-if $use_proxy ; then
-  echo "Exporting enviroment variables for proxy: $PROXY."
-  export http_proxy="$PROXY"
-  export HTTP_PROXY="$PROXY"
-  export https_proxy="$PROXY"
-  export HTTPS_PROXY="$PROXY"
-else
-  echo "Setting proxy enviroment to none."
-  export http_proxy=""
-  export HTTP_PROXY=""
-  export https_proxy=""
-  export HTTPS_PROXY=""
-fi
-
-
-
+echo "You will need to start a new session if you change the proxy."
+echo "Or run:"
+echo "source $HOME/.dotfiles/sandia/env.zsh"
 if [ "$1" = "" ] ; then
   if $use_proxy ; then
     echo "$PROXY: ON"
