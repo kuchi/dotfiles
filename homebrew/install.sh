@@ -14,5 +14,9 @@ fi
 
 # Install homebrew packages
 brew install grc coreutils spark
+# Install bundler
+brew tap homebrew/bundle
+brew bundle --file=$HOME/.dotfiles/homebrew/Brewfile_basic
+
 
 exit 0
