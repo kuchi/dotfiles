@@ -11,3 +11,6 @@ alias -g dl="~/Downloads"
 function f() { find . -iname "*$1*" ${@:2} }
 # r HTTP  # Find all files with HTTP in them in current dir recursively
 function r() { grep "$1" ${@:2} -R . }
+
+# Multi move
+alias mmv='noglob zmv -W'
