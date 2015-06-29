@@ -12,13 +12,13 @@ tap 'homebrew/science'
 brew 'ffmpeg'
 brew 'git-flow-avh'
 brew 'htop-osx' # Better than top, use htop
-brew 'python'
+# brew 'python'
 # brew 'pyqt'
 brew 'tmux'
 brew 'reattach-to-user-namespace'  # Need this for tmux.
 brew 'caskroom/cask/brew-cask'
-brew 'homebrew/python/numpy'
-brew 'homebrew/python/scipy'
+# brew 'homebrew/python/numpy'
+# brew 'homebrew/python/scipy'
 # brew 'homebrew/science/pcl'
 # cask 'blender'
 cask 'cheatsheet' # Shows keyboard shortcuts
