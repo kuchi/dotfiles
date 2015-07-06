@@ -27,3 +27,4 @@ cask 'spectacle' # Window placement
 cask 'vlc'
 cask 'atom'
 cask 'sourcetree'
+cask 'lightpaper'
