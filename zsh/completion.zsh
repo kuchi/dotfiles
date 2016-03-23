@@ -8,3 +8,4 @@ zstyle ':completion:*' insert-tab pending
 autoload bashcompinit
 bashcompinit
 eval "$(_PMT_COMPLETE=source pmt)"
+eval "$(_PMA_COMPLETE=source pma)"
